@@ -28,7 +28,7 @@ module.exports = function(options, callback) {
     // if cwd provided, look up for cortex-shrinkwrap.json
     if (cwd) {
       try {
-        tree = require(path.resolve(cwd, 'crotex-shrinkwrap.json'));
+        tree = require(path.resolve(cwd, 'cortex-shrinkwrap.json'));
       } catch (e) {
         tree = null;
       }

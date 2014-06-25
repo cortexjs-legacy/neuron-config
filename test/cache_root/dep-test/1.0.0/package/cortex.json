@@ -1,9 +1,8 @@
 {
-  "dependencies": {
-    "util": "~1.0.0",
-    "json": "~1.0.1"
+  "dependencies": {},
+  "asyncDependencies": {
+    "cookie": "~0.1.0"
   },
-  "asyncDependencies": {},
   "devDependencies": {},
   "scripts": {},
   "name": "dep-test",

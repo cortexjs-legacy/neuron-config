@@ -15,7 +15,7 @@ it('normal package', function(done) {
   normal.copy(function(err, dir) {
     var pkg = require(normal.resolve('cortex.json'));
     pkg.dependencies = {
-      "deep-eql": "~0.1.2"
+      "dep-test": "~1.0.0"
     };
 
     nconfig({
