@@ -51,7 +51,6 @@ module.exports = function(options, callback) {
   callback(new Error("Can not get shrinkwrap tree from the options provided"));
 
   function fromShrinked(shrinked) {
-    console.log(shrinked);
     var config = {
       tree: ntree.parse(shrinked)
     };

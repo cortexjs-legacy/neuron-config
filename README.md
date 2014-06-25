@@ -25,14 +25,18 @@ nconfig({
 
 // or already has a shrinkwrap tree 
 nconfig({
+  tree: tree
+}, function(err, config) {
   
-})
+});
 
 
 // pass shrinked object
 nconfig({
-  shrinked
-})
+  shrinked: shrinked
+}, function(err, config) {
+  
+});
 
 
 ```
