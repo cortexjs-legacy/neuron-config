@@ -23,8 +23,16 @@ nconfig({
 
 });
 
-// pass shrinked object
+// or already has a shrinkwrap tree 
+nconfig({
+  
+})
 
+
+// pass shrinked object
+nconfig({
+  shrinked
+})
 
 
 ```

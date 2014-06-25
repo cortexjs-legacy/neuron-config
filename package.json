@@ -4,7 +4,7 @@
   "description": "Config object for neuron",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "./node_modules/.bin/mocha -R spec test"
   },
   "repository": {
     "type": "git",
@@ -24,11 +24,13 @@
     "url": "https://github.com/cortexjs/neuron-config/issues"
   },
   "devDependencies": {
-    "chai": "*",
-    "cortex-playground": "^0.2.9",
-    "mocha": "*"
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1",
+    "cortex-playground": "^0.2.9"
   },
   "dependencies": {
-    "neuron-tree": "^1.0.0"
+    "cortex-shrinkwrap": "^1.1.1",
+    "neuron-tree": "^1.0.0",
+    "shrinked": "^0.1.4"
   }
 }
