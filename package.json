@@ -29,7 +29,7 @@
     "cortex-playground": "^0.2.9"
   },
   "dependencies": {
-    "cortex-shrinkwrap": "^1.1.1",
+    "cortex-shrinkwrap": "^1.1.2",
     "neuron-tree": "^1.0.0",
     "shrinked": "^0.1.4"
   }

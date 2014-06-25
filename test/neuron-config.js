@@ -15,7 +15,7 @@ it('normal package', function(done) {
   normal.copy(function(err, dir) {
     var pkg = require(normal.resolve('cortex.json'));
     pkg.dependencies = {
-      "dep-test": "~1.0.0"
+      "cookie": "~0.1.0"
     };
 
     nconfig({
@@ -23,7 +23,12 @@ it('normal package', function(done) {
       cache_root: path.join(__dirname, 'cache_root'),
       cwd: dir
     }, function(err, config) {
-      console.log(JSON.stringify(config, null, 4));
+      assert(config.tree);
+      assert(config.tree.normal);
+      assert(config.tree.normal["0.1.0"]);
+      assert.equal(config.tree.normal["0.1.0"].length, 2);
+      assert(config.tree.normal["0.1.0"][0].cookie);
+
       done(err);
     });
   });
