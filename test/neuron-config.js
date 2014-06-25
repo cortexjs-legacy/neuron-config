@@ -21,6 +21,7 @@ it('normal package', function(done) {
     nconfig({
       pkg: pkg,
       cache_root: path.join(__dirname, 'cache_root'),
+      built_root: path.join(__dirname, 'cache_root'),
       cwd: dir
     }, function(err, config) {
       assert(config.tree);

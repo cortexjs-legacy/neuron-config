@@ -1,6 +1,6 @@
 {
   "name": "neuron-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Config object for neuron",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "cortex-playground": "^0.2.9"
   },
   "dependencies": {
-    "cortex-shrinkwrap": "^1.1.2",
+    "cortex-shrinkwrap": "^2.0.0",
     "neuron-tree": "^1.0.0",
     "shrinked": "^0.1.4"
   }
