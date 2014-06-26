@@ -13,10 +13,9 @@ $ npm install neuron-config --save
 ```js
 var nconfig = require('neuron-config');
 
-// pass package json, cache_root and built_root
+// pass package json and built_root
 nconfig({
   pkg: pkg,
-  cache_root: cache_root,
   built_root: built_root,
   cwd: cwd // when cwd is passed, neuron-config will try to read 'cortex-shrinkwrap.json' in cwd
 }, function(err, config) {

@@ -13,7 +13,6 @@ module.exports = function(options, callback) {
   var shrinked = options.shrinked;
 
   var pkg = options.pkg;
-  var cache_root = options.cache_root;
   var built_root = options.built_root;
   var cwd = options.cwd;
 
@@ -39,12 +38,9 @@ module.exports = function(options, callback) {
     }
 
     // if no cwd provide, or cortex-shrinkwrap.json is not found
-    if (pkg && cache_root && built_root) {
+    if (pkg && built_root) {
       // generate tree with shrinkwrap
-      return shrinkwrap(pkg, {
-        cache_root: cache_root,
-        built_root: built_root
-      }, function(err, tree) {
+      return shrinkwrap(pkg, built_root, {}, function(err, tree) {
         if (err) return callback(err);
         fromTree(tree);
       });
