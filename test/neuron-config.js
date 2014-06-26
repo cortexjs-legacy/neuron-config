@@ -20,10 +20,11 @@ it('normal package', function(done) {
 
     nconfig({
       pkg: pkg,
-      cache_root: path.join(__dirname, 'cache_root'),
-      built_root: path.join(__dirname, 'cache_root'),
+      built_root: path.join(__dirname, 'built_root'),
       cwd: dir
     }, function(err, config) {
+      if (err) return done(err);
+
       assert(config.tree);
       assert(config.tree.normal);
       assert(config.tree.normal["0.1.0"]);
